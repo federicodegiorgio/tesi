@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="fede.tesi.mqttplantanalyzer.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Sign Out"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_map"
+        android:orderInCategory="100"
+        android:title="Map"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_bt"
+        android:orderInCategory="100"
+        android:title="Bt Connection"
+        app:showAsAction="never" />
+</menu>

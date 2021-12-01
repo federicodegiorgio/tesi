@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/BoardSelectionFragment">
+
+    <fragment
+        android:id="@+id/BoardSelectionFragment"
+        android:name="fede.tesi.mqttplantanalyzer.BoardSelectionFragment"
+        android:label="Select Board"
+        tools:layout="@layout/fragment_board_list">
+
+        <action
+            android:id="@+id/action_BoardSelection_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ImageFragment"
+        android:name="fede.tesi.mqttplantanalyzer.ImageFragment"
+        android:label="Images List"
+        tools:layout="@layout/image_fragment">
+
+        <action
+            android:id="@+id/action_ImageFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="fede.tesi.mqttplantanalyzer.MyBluetoothActivity"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="fede.tesi.mqttplantanalyzer.ChartListFragment"
+        android:label="@string/second_fragment_label">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_LuminosityFragment"
+            app:destination="@id/LuminosityFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_HumidityFragment"
+            app:destination="@id/HumidityFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_TemperatureFragment"
+            app:destination="@id/TemperatureFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_MoistureFragment"
+            app:destination="@id/MoistureFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_ImageFragment"
+            app:destination="@id/ImageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/LuminosityFragment"
+        android:name="fede.tesi.mqttplantanalyzer.LuminosityChartFragment"
+        android:label="@string/luminosity_label"
+        tools:layout="@layout/fragment_second">
+
+    <action
+        android:id="@+id/action_LuminosityFragment_to_SecondFragment"
+        app:destination="@id/SecondFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/HumidityFragment"
+        android:name="fede.tesi.mqttplantanalyzer.HumidityChartFragment"
+        android:label="@string/humidity_label"
+        tools:layout="@layout/fragment_second">
+
+    <action
+        android:id="@+id/action_HumidityFragment_to_SecondFragment"
+        app:destination="@id/SecondFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/TemperatureFragment"
+        android:name="fede.tesi.mqttplantanalyzer.TemperatureChartFragment"
+        android:label="@string/temperature_label"
+        tools:layout="@layout/fragment_second">
+
+    <action
+        android:id="@+id/action_TemperatureFragment_to_SecondFragment"
+        app:destination="@id/SecondFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/MoistureFragment"
+        android:name="fede.tesi.mqttplantanalyzer.MoistureChartFragment"
+        android:label="@string/moisture_label"
+        tools:layout="@layout/fragment_second">
+
+    <action
+        android:id="@+id/action_MoistureFragment_to_SecondFragment"
+        app:destination="@id/SecondFragment" />
+    </fragment>
+
+
+</navigation>

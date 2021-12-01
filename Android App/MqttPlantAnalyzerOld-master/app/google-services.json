@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "760999932027",
+    "project_id": "mqttplantanalyzer",
+    "storage_bucket": "mqttplantanalyzer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760999932027:android:a2494e51dffc6975be72de",
+        "android_client_info": {
+          "package_name": "fede.tesi.mqttplantanalyzer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "760999932027-q3snoj7klo8tonmejncq7gktrn92r9dr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fede.tesi.mqttplantanalyzer",
+            "certificate_hash": "120fdc77633116576d0260c75729f4510a2b34b2"
+          }
+        },
+        {
+          "client_id": "760999932027-g8qfar9d8cpu5668vbglpqje4jpltivh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYWkh_GkMEHatitv_YalTQF14z6hJq_dk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "760999932027-g8qfar9d8cpu5668vbglpqje4jpltivh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
