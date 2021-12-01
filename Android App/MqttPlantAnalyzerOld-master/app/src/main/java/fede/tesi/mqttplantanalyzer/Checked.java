@@ -75,7 +75,6 @@ public class Checked extends AppCompatActivity {
         // method to get the location
         getLastLocation();
         Log.e("Intent result", String.valueOf(connected));
-        Log.e("Intent result","EEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
 
         if(!connected) {
             TextView result = this.findViewById(R.id.textView3);
