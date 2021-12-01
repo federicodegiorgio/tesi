@@ -26,7 +26,15 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
-
+/*
+*
+*
+*
+* Classe per gestire l'invio di dati a firebase direttamente da Android fatta prima di implementare lo script nodeJs.
+* Non è più in uso ma potrebbe tornare utile
+*
+*
+*/
 public class MyMqttService extends Service implements MqttCallback, IMqttActionListener {
 
     private final IBinder binder = new MyBinder();
