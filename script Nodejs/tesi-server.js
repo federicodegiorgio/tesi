@@ -16,21 +16,21 @@ console.log('Server running at http://127.0.0.1:1337/');
 
 const firebaseConfig = {
 
-  apiKey: "AIzaSyCOtcbUsltFgPAaJaELKnkYeDh7_yVMUzE",
+  apiKey: "",
 
-  authDomain: "mqttplantanalyzer.firebaseapp.com",
+  authDomain: "",
 
-  databaseURL: "https://mqttplantanalyzer-default-rtdb.europe-west1.firebasedatabase.app",
+  databaseURL: "",
 
-  projectId: "mqttplantanalyzer",
+  projectId: "",
 
-  storageBucket: "mqttplantanalyzer.appspot.com",
+  storageBucket: "",
 
-  messagingSenderId: "760999932027",
+  messagingSenderId: "",
 
-  appId: "1:760999932027:web:7c5082649bacfcfebe72de",
+  appId: "",
 
-  measurementId: "G-VJZGZYKMWJ"
+  measurementId: ""
 
 };
 
@@ -69,7 +69,7 @@ const uploadFile = async() => {
 
 const storage= new Storage();
 
-let bucketName = "gs://mqttplantanalyzer.appspot.com";
+let bucketName = "";
 
 let filename;
 
@@ -82,7 +82,7 @@ var client = mqtt.connect("mqtt://broker.hivemq.com",{clientId:"fedeTesiSserver"
 client.on("connect",function(){	
 console.log("connected");
 });
-client.subscribe("provaTopic",{qos:2})
+client.subscribe("TesiFedeTopic",{qos:2})
 var listImage={};
 client.on('message', function(topic, payload) {
     const obj = JSON.parse(payload.toString()) // payload is your JSON as string
